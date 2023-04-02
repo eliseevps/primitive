@@ -1,3 +1,5 @@
+//Complete
+
 package task0314;
 
 /* 
@@ -18,7 +20,11 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) {
-        //напишите тут ваш код
-
+        for (int i = 1; i <= 10; i++) {
+            for (int j = 1; j <= 10; j++) {
+                System.out.printf("%4d", i * j); // С форматированием красивее
+            }
+            System.out.println();
+        }
     }
 }

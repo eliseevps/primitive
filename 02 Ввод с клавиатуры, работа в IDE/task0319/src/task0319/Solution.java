@@ -1,3 +1,5 @@
+//Complete
+
 package task0319;
 
 import java.io.BufferedReader;
@@ -24,7 +26,10 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
-
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String name = reader.readLine();
+        int number1 = Integer.parseInt(reader.readLine());
+        int number2 = Integer.parseInt(reader.readLine());
+        System.out.printf("%s получает %d через %d лет.", name, number1, number2);
     }
 }

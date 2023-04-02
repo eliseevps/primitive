@@ -1,3 +1,5 @@
+//Complete
+
 package task0417;
 
 import java.io.BufferedReader;
@@ -34,7 +36,18 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
-
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int num1 = Integer.parseInt(reader.readLine());
+        int num2 = Integer.parseInt(reader.readLine());
+        int num3 = Integer.parseInt(reader.readLine());
+        if (num1 == num2 && num1 == num3) {
+            System.out.printf("%d %d %d \n", num1, num2, num3);
+        } else if (num1 == num2) {
+            System.out.printf("%d %d \n", num1, num2);
+        } else if (num1 == num3) {
+            System.out.printf("%d %d \n", num1, num3);
+        } else if (num2 == num3) {
+            System.out.printf("%d %d \n", num2, num3);
+        }
     }
 }

@@ -1,3 +1,5 @@
+//Complete
+
 package task0424;
 
 import java.io.BufferedReader;
@@ -23,7 +25,17 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
-
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int[] numArray = new int[3];
+        for (int i = 0; i < numArray.length; i++) {
+            numArray[i] = Integer.parseInt(reader.readLine());
+        }
+        if (numArray[0] == numArray[1] && numArray[0] != numArray[2]) {
+            System.out.println(numArray.length);
+        } else if (numArray[0] == numArray[2] && numArray[0] != numArray[1]){
+            System.out.println(numArray.length-1);
+        } else if (numArray[1] == numArray[2] && numArray[1] != numArray[0]){
+            System.out.println(numArray.length-2);
+        }
     }
 }

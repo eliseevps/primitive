@@ -1,3 +1,4 @@
+//Complete
 package task0420;
 
 import java.io.BufferedReader;
@@ -18,7 +19,22 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
-
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int[] numArray = new int[3];
+        for (int i = 0; i < numArray.length; i++) {
+            numArray[i] = Integer.parseInt(reader.readLine());
+        }
+        for (int i = 1; i < numArray.length; i++) {
+            for (int j = 0; j < numArray.length-i; j++) {
+                if (numArray[j] < numArray[j+1]) {
+                    numArray[j+1] += numArray[j];
+                    numArray[j] = numArray[j+1] - numArray[j];
+                    numArray[j+1] -= numArray [j];
+                }
+            }
+        }
+        for (int i : numArray) {
+            System.out.print(i + " ");
+        }
     }
 }

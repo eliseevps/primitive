@@ -1,3 +1,5 @@
+//Complete
+
 package task0419;
 
 import java.io.BufferedReader;
@@ -17,7 +19,17 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
-
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int[] numArray = new int[4];
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < numArray.length; i++) {
+            numArray[i] = Integer.parseInt(reader.readLine());
+        }
+        for (int i: numArray) {
+            if (i > max) {
+                max = i;
+            }
+        }
+        System.out.println(max);
     }
 }

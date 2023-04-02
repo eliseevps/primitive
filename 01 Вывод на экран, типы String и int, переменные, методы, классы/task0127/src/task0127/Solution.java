@@ -1,3 +1,5 @@
+//Complete
+
 package task0127;
 
 /* 
@@ -17,7 +19,7 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) {
-        //напишите тут ваш код
+        System.out.println(sqr(5));
     }
 
     public static int sqr(int a) {

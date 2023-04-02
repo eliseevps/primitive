@@ -1,3 +1,5 @@
+//Complete
+
 package task0414;
 
 import java.io.BufferedReader;
@@ -30,7 +32,12 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
-
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int year = Integer.parseInt(reader.readLine());
+        if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
+            System.out.printf("количество дней в году: %d", 366);
+        } else {
+            System.out.printf("количество дней в году: %d", 365);
+        }
     }
 }

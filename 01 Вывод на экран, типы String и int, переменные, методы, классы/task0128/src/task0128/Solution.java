@@ -1,3 +1,5 @@
+//Complete
+
 package task0128;
 
 /* 
@@ -17,7 +19,7 @@ Requirements:
 
 public class Solution {
     public static void main(String[] args) {
-        //напишите тут ваш код
+        sum(2, 2);
     }
 
     public static void sum(int a, int b) {

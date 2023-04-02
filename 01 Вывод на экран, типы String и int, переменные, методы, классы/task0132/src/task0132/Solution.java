@@ -1,3 +1,5 @@
+//Complete
+
 package task0132;
 
 /* 
@@ -25,6 +27,11 @@ public class Solution {
     }
 
     public static int sumDigitsInNumber(int number) {
-        //напишите тут ваш код
+        int result = 0;
+        while (number != 0) {
+            result += number % 10;
+            number /= 10;
+        }
+        return result;
     }
 }
